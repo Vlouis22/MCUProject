@@ -8,15 +8,20 @@ const __dirname = path.dirname(__filename);
 
 const router = express.Router();
 
+
+
 router.get("/", (req, res) => {
     res.status(200).send(giftData);
 });
 
-router.get("/:id", (req, res) => {
-    console.log("here");
-    res.status(200).sendFile(
-        path.resolve(__dirname, "../../client/public/gift.html")
-    );
+router.get('/:giftId', (req, res) => {
+    res.status(200).sendFile(path.resolve(__dirname, '../public/gift.html'))
+  })
+
+  router.get('*', (req, res) => {
+    res.status(404).send("Error 404 not found");
 });
+
+
 
 export default router;

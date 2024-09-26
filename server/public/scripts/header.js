@@ -7,9 +7,10 @@ const headerLeft = document.createElement("div");
 headerLeft.classList.add("header-left");
 
 const headerLogo = document.createElement("img");
+headerLogo.src = "/logo.png";
 
 const headerTitle = document.createElement("h1");
-headerTitle.textContent = "Marvel Cinematic Universe";
+headerTitle.textContent = "UnEarthed";
 
 headerLeft.appendChild(headerLogo);
 headerLeft.appendChild(headerTitle);
@@ -18,7 +19,7 @@ const headerRight = document.createElement("div");
 headerRight.classList.add("header-right");
 
 const headerButton = document.createElement("Home");
-headerButton.textContent = "All Superheroes";
+headerButton.textContent = "Home";
 
 headerButton.addEventListener("click", function handleClick(event) {
     window.location = "/";

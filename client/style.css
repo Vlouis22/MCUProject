@@ -10,17 +10,21 @@
     overflow: hidden;
     padding: 20px 10px;
     padding-bottom: 60px;
+    margin-bottom: 20px;
+    background-image: url("https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/05/Heroes-Of-The-MCU.jpg");
+    background-size: cover;
+    background-position: center; 
 }
 
 .header-left {
     float: left;
-    height: 100px;
     width: 310px;
+    color: rgb(255, 255, 255);
 }
 
 .header-left img {
     padding-top: 8px;
-    height: 80px;
+    height: 80px;    
 }
 
 .header-left h1 {
@@ -34,9 +38,10 @@
     padding-right: 10px;
 }
 
-.header-right button {
-    background-color: white;
+.header-right{
+    background-color: red;
     border: solid;
+    color: white;
     border-width: 3px;
     border-color: rgb(3, 7, 89);
     border-radius: 0.1rem;
@@ -48,7 +53,6 @@
     text-align: center;
     text-transform: uppercase;
     touch-action: manipulation;
-    width: 80px;
 }
 
 /* Home page CSS */
@@ -66,7 +70,7 @@ main {
     background: transparent;
     border-style: solid;
     border-width: 3px;
-    border-color: rgb(3, 7, 89);
+    border-color: rgb(158, 2, 2);
     border-radius: 0.3rem;
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.057);
     margin-top: 0px;
@@ -155,4 +159,13 @@ main {
 
 .gift-details {
     width: 45vw;
+}
+
+
+#image{
+    width: 100px;
+}
+
+img{
+    width: 100px;
 }
