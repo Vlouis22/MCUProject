@@ -1,5 +1,7 @@
 const renderGifts = async () => {
     const response = await fetch("/gifts");
+    console.log(response)
+
     const data = await response.json();
 
     const mainContent = document.getElementById("main-content");
@@ -67,7 +69,7 @@ const renderGift = async () => {
 
         const imageElement = document.getElementById('image');
         imageElement.src = gift.image;
-        imageElement.style.width = '250px'; // Example of applying inline styles
+        imageElement.style.width = '250px';
         imageElement.style.height = 'auto';
         imageElement.style.borderRadius = '5px';
         imageElement.style.marginRight = '20px';
@@ -113,8 +115,8 @@ const renderGift = async () => {
     } else {
         const noGift = document.createElement("h2");
         noGift.textContent = "Gift not found";
-        noGift.style.fontSize = '24px'; // Style for no gift message
-        noGift.style.color = '#e74c3c'; // Red color for error message
+        noGift.style.fontSize = '24px';
+        noGift.style.color = '#e74c3c';
         giftContent.appendChild(noGift);
     }
 };
